@@ -52,12 +52,12 @@ function RIGHT() {
 function MOVE() {
     if (Pacman.x != -1) {
         let oldMan = Pacman;
-        if (Pacman.f === 0 && Pacman.y != 0) {
-            Pacman = { x: oldMan.x, y: oldMan.y - 1, f: 0 }
+        if (Pacman.f === 0 && Pacman.y != 4) {
+            Pacman = { x: oldMan.x, y: oldMan.y + 1, f: 0 }
         } else if (Pacman.f === 1 && Pacman.x != 4) {
             Pacman = { x: oldMan.x + 1, y: oldMan.y, f: 1 }
-        } else if (Pacman.f === 2 && Pacman.y != 4) {
-            Pacman = { x: oldMan.x, y: oldMan.y + 1, f: 2 }
+        } else if (Pacman.f === 2 && Pacman.y != 0) {
+            Pacman = { x: oldMan.x, y: oldMan.y - 1, f: 2 }
         } else if (Pacman.f === 3 && Pacman.x != 0) {
             Pacman = { x: oldMan.x - 1, y: oldMan.y, f: 3 }
         }
