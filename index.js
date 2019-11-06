@@ -75,11 +75,13 @@ Q will exit the program`);
 
 // If placements are to be made as a singlestring this will check through and break it up
 // This does not do any checking but just returning where a value should be in the string
+// TODO: Check if value of x and y are a number
 let breakPlace = ans => {
   let placement = ans.trim().substring(5, 15);
-  let x = placement.substring(1, 2);
-  let y = placement.substring(3, 4);
+  let x = parseInt(placement.substring(1, 2));
+  let y = parseInt(placement.substring(3, 4));
   let f = placement.substring(5, 10);
+
   PLACE(x, y, f);
 };
 
@@ -95,10 +97,10 @@ let convertFace = f => {
 // Some of this checking is not that relevant anymore
 function PLACE(x, y, f) {
   f = convertFace(f);
-  if (x > 4 || x < 0) {
+  if (x > 4 || x < 0 || x === NaN) {
     Pacman = { x: -1, y: -1, f: -1 };
     console.log("x Value has to be between 0 and 4");
-  } else if (y > 4 || y < 0) {
+  } else if (y > 4 || y < 0 || y === NaN) {
     Pacman = { x: -1, y: -1, f: -1 };
     console.log("y Value has to be between 0 and 4");
   } else if (f > 3 || f < 0) {
@@ -108,7 +110,6 @@ function PLACE(x, y, f) {
     Pacman.x = x;
     Pacman.y = y;
     Pacman.f = f;
-    console.log(Pacman);
   }
 }
 
@@ -122,7 +123,6 @@ function LEFT() {
     } else {
       Pacman.f--;
     }
-    console.log(Pacman);
   }
 }
 
@@ -148,7 +148,6 @@ function MOVE() {
     } else if (Pacman.f === 3 && Pacman.x != 0) {
       Pacman = { x: oldMan.x - 1, y: oldMan.y, f: 3 };
     }
-    console.log(Pacman);
   }
 }
 
