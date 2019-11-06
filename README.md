@@ -20,3 +20,8 @@ RIGHT will turn the packman to their right
 REPORT will tell you where the pacman is
 H will bring up the controls
 Q will exit the program
+
+# TODO/Improvements
+
+- Add in a check for if f is -1 and use it where an if has been repeated
+- Ability to change the size of the grid, maybe ask for input on start

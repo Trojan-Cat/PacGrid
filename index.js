@@ -1,7 +1,7 @@
 // Needed a way to make this terminal based
 const readline = require("readline");
 //Using associative arry for the faces, so to easily change and check the input of a face to the array
-let faces = { NORTH: 0, EAST: 1, SOUTH: 2, WEST: 3 };
+const faces = { NORTH: 0, EAST: 1, SOUTH: 2, WEST: 3 };
 
 // The readline is fairly boilerplate from nodejs.org
 const rl = readline.createInterface({
@@ -58,8 +58,7 @@ var recursiveAsyncReadLine = function() {
 recursiveAsyncReadLine();
 
 //  Default start position will be out of the map therefore the Pacman won't move till a valid pacman is initialized
-//let Pacman = { x: -1, y: -1, f: -1 };
-let Pacman = { x: 0, y: 0, f: 0 };
+let Pacman = { x: -1, y: -1, f: -1 };
 
 // Welcome shows the user how to play the game
 const Welcome = () =>
