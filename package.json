@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "test"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Trojan-Cat/PacGrid/issues"
   },
-  "homepage": "https://github.com/Trojan-Cat/PacGrid#readme"
+  "homepage": "https://github.com/Trojan-Cat/PacGrid#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }

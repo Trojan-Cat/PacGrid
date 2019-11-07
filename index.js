@@ -111,7 +111,10 @@ function PLACE(x, y, f) {
     Pacman.y = y;
     Pacman.f = f;
   }
+  return Pacman;
 }
+
+module.exports = PLACE;
 
 // Left and right commands just turns where pacman is facing
 // The first if statement checks if the pacman last placed in valid, if not it skips the command
