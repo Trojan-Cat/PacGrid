@@ -9,6 +9,12 @@ NODE.js needs to be installed
 - npm install
 - npm start to run the application
 
+# Testing
+
+    Jest is being used to test for placements
+    - Terminal
+    - npm test
+
 # Test Data
 
 The commands are case sensitive
@@ -31,7 +37,6 @@ The commands are case sensitive
 - MOVE
 - REPORT --- expected X = 4, Y = 3, EAST
 
-
 # Commands for the game
 
 Welcome to Pacman, you will control a pacman placed onto a 5x5 grid
@@ -46,9 +51,9 @@ Q will exit the program
 
 # TODO/Improvements
 
-- Do checking to see if x and y are a number
-- Write up boundary variables to test
-- Unit tests
-- Add in a check for if f is -1 and use it where an if has been repeated
-- Ability to change the size of the grid, maybe ask for input on start
-- A cool terminal output of the grid would be neat
+[x] Do checking to see if x and y are a number
+[x] Write up boundary variables for place to test
+[x] Unit tests
+[ ] Need more testing
+[x] Add in a check for if f is -1 and use it where an if has been repeated
+[ ] Ability to change the size of the grid, maybe ask for input on start
