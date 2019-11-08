@@ -11,9 +11,9 @@ NODE.js needs to be installed
 
 # Testing
 
-    Jest is being used to test for placements
-    - Terminal
-    - npm test
+Jest is being used to test for placements
+  - Terminal
+  - npm test
 
 # Test Data
 
