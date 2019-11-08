@@ -51,9 +51,9 @@ Q will exit the program
 
 # TODO/Improvements
 
-[x] Do checking to see if x and y are a number
-[x] Write up boundary variables for place to test
-[x] Unit tests
-[ ] Need more testing
-[x] Add in a check for if f is -1 and use it where an if has been repeated
-[ ] Ability to change the size of the grid, maybe ask for input on start
+- [x] Do checking to see if x and y are a number
+- [x] Write up boundary variables for place to test
+- [x] Unit tests
+- [ ] Need more testing
+- [x] Add in a check for if f is -1 and use it where an if has been repeated
+- [ ] Ability to change the size of the grid, maybe ask for input on start
